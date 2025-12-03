@@ -1,3 +1,6 @@
+import Image from "next/image"
+import heroImageSquare from "../../public/hero-image.png"
+
 export default function Home() {
   return (
     <main>
@@ -23,7 +26,11 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <img src="/hero-image.png" width={350} />
+        <Image 
+            src={heroImageSquare} 
+            height={1206} 
+            width={1201} 
+            alt="Hero image" className="w-87" />
       </section>
     </main>
   );
