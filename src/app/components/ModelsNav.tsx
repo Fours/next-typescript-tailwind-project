@@ -7,7 +7,6 @@ import type { Category } from "@/app/types"
 export default function ModelsNav({ categories }: { categories: Category[] }) {
 
     const pathname = usePathname()
-    console.log("pathname:", pathname)
 
     return (
         <nav className="w-full overflow-x-auto md:overflow-visible scrollbar-hide">
