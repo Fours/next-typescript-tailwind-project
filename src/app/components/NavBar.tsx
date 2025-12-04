@@ -1,6 +1,6 @@
 import Link from "next/link"
-import PFLogoIcon from "@/public/printforge-logo-icon.svg"
-import PFLogo from "@/public/printforge-logo.svg"
+import PFLogoIcon from "../../../public/printforge-logo-icon.svg"
+import PFLogo from "../../../public/printforge-logo.svg"
 
 export default function Navbar() {
   return (
