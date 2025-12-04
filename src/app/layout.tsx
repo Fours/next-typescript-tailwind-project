@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import printforgeLogo from "../../public/printforge-logo.svg"
 import printforgeLogoIcon from "../../public/printforge-logo-icon.svg"
-import { RootLayoutProps } from "./types";
+import { LayoutProps } from "./types";
 import NavBar from "./components/NavBar";
 
 const albertSans = Albert_Sans({
@@ -21,7 +21,7 @@ const montserratAlternates = Montserrat_Alternates({
 
 export default function RootLayout({
   children,
-}: RootLayoutProps) {
+}: LayoutProps) {
   return (
     <html lang="en">
       <body className={`${albertSans.className} ${montserratAlternates.variable}`}>
