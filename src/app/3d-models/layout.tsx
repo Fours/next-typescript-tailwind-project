@@ -3,7 +3,11 @@ import ModelsNav from "../components/ModelsNav"
 import { getAllCategories } from "@/app/lib/categories"
 import type { Category } from "@/app/types"
 
-export default function ModelsLayout({ children }: { children: ReactNode }) {
+type LayoutProps = Readonly<{
+  children: React.ReactNode;
+}>
+
+export default function ModelsLayout({ children }: LayoutProps) {
   const categories: Category[] = getAllCategories()
   return (
     <div className="relative flex flex-col min-h-screen md:flex-row">

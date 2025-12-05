@@ -1,10 +1,10 @@
 import Link from "next/link"
 import { FaRegHeart } from "react-icons/fa6"
 import Pill from "./Pill"
-import { ModelCardProps } from "@/app/types"
 import placeholderImg from "../../../public/hero-image-square.png"
+import type { Model } from "../types"
 
-export default function ModelCard({ model }: ModelCardProps) {
+export default function ModelCard({ model }: { model: Model }) {
     return (
         <Link
             href={`/3d-models/${model.id}`}

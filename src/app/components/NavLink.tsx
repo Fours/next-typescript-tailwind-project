@@ -1,5 +1,11 @@
+import { ReactNode } from "react"
 import Link from "next/link"
-import type { NavLinkProps } from "@/app/types"
+
+type NavLinkProps = {
+    href: string
+    isActive: boolean
+    children: ReactNode
+}
 
 export default function NavLink({ href, isActive, children }: NavLinkProps) {
   

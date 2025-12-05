@@ -1,7 +1,12 @@
-import { CategoryPageProps } from "@/app/types"
 import { getModels } from "@/app/lib/models"
 import { getCategoryBySlug } from "@/app/lib/categories"
 import ModelsGrid from "@/app/components/ModelsGrid"
+
+type CategoryPageProps = {
+    params: Promise<{
+        categoryName: string
+    }>
+}
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
     const { categoryName } = await params
